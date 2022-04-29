@@ -1,64 +1,22 @@
-:root {
-    /* Color : 디자인 책에서 정의하길 너무 흰색과 검은색은 사용자에게 좋지 못하므로 톤다운된것을 사용한다. 그래서 일일이 찾아서 사용하는것이 아닌 자주사용하는 색을 변수로 만들어서 사용한다.
-    이런 변수를 사용할때는 사용하고자 하는 선택자에다가
-    속성 : var(변수명)으로사용한다.*/
-
-    --white-color: #fff;
-    --black-color: #140a00;
-    --blue-color: #045fd4;
-    --red-color: #ff0000;
-    --grey-dark-color: #909090;
-    --grey-light-color: #e0e0e0;
-    /* Size */
-
-    --side-padding: 12px;
-    --avatar-size: 36px;
-
-    /* Font Size */
-    --font-large: 18px;
-    --font-medium: 14px;
-    --font-small: 12px;
-    --font-micro: 10px;
+/*피드박스*/
+.feed_box {
+    background-color: white;
+    width: 480px;
+    height: 480px;
+    margin: 10px;
 }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: var(--side-padding);
-    background-color: var(--black-color);
-    color: var(--white-color);
-    position: sticky;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
-    background-color: black;
-    padding: 10px;
-}
-
-.player {
-    position: sticky;
-    top: 0;
-    text-align: center;
-    background-color: var(--black-color);
-}
-
-.player video {
-    width: 100%;
-    height: 300px;
-    max-width: 1000px;
-}
-.nav-container{
-    display: flex;
-    position: fixed;
-    top: 0;
-    margin: auto;
-}
-
-/*header{*/
-/*    margin-top: 80px;*/
-/*}*/
+/*캐러셀 이미지 크기*/
+ /* 캐러셀(이미지슬라이드) 이미지 크기변경 */
+      .carousel-inner{
+        width:auto;
+        height:300px; /* 이미지 높이 변경 */
+      }
+      .carousel-item{
+        width: 100%;
+        height:100%;
+      }
+      .d-block {
+        display:block;
+        width: auto;
+        height: 100%;
+      }
